@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="594.0" prefWidth="768.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="phone.book.show.Controller">
+   <children>
+      <Label layoutX="22.0" layoutY="20.0" prefHeight="17.0" prefWidth="60.0" text="lastName" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="20.0" />
+      <Label layoutX="26.0" layoutY="43.0" text="firstName" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="40.0" />
+      <Label layoutX="26.0" layoutY="67.0" text="birthday" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="70.0" />
+      <Label layoutX="28.0" layoutY="90.0" prefHeight="17.0" prefWidth="38.0" text="email" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="90.0" />
+      <Label layoutX="27.0" layoutY="114.0" text="address" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="110.0" />
+      <Label layoutX="23.0" layoutY="256.0" text="Numbers" />
+      <Label layoutX="29.0" layoutY="135.0" text="creator" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="140.0" />
+      <TextField fx:id="lastName" layoutX="89.0" layoutY="16.0" prefHeight="25.0" prefWidth="393.0" />
+      <TextField fx:id="firstName" layoutX="89.0" layoutY="39.0" prefHeight="25.0" prefWidth="393.0" />
+      <TextField fx:id="email" layoutX="89.0" layoutY="86.0" prefHeight="25.0" prefWidth="393.0" />
+      <TextField fx:id="address" layoutX="89.0" layoutY="110.0" prefHeight="25.0" prefWidth="393.0" />
+      <TextField fx:id="creator" layoutX="89.0" layoutY="131.0" prefHeight="25.0" prefWidth="393.0" />
+      <ListView fx:id="contacts" layoutX="81.0" layoutY="333.0" onMousePressed="#selectContact" prefHeight="253.0" prefWidth="676.0" />
+      <ListView fx:id="phoneNumbers" layoutX="86.0" layoutY="204.0" onMousePressed="#selectNumber" prefHeight="121.0" prefWidth="667.0" />
+      <Label layoutX="25.0" layoutY="409.0" text="contacts" />
+      <Button layoutX="496.0" layoutY="16.0" mnemonicParsing="false" onAction="#addContact" text="add contact" />
+      <Button layoutX="675.0" layoutY="16.0" mnemonicParsing="false" onAction="#editContact" text="edit Contact" />
+      <Button layoutX="545.0" layoutY="48.0" mnemonicParsing="false" onAction="#removeСontact" text="remove Сontact" />
+      <Button layoutX="506.0" layoutY="78.0" mnemonicParsing="false" onAction="#searchByName" text="search By Name" />
+      <Button layoutX="585.0" layoutY="16.0" mnemonicParsing="false" onAction="#addNumber" text="add Number" />
+      <Button layoutX="653.0" layoutY="48.0" mnemonicParsing="false" onAction="#removeNumber" text="remove Number" />
+      <Button layoutX="618.0" layoutY="78.0" mnemonicParsing="false" onAction="#searchByPartOffName" text="search By Part Off Name" />
+      <Button layoutX="541.0" layoutY="110.0" mnemonicParsing="false" onAction="#searchByNumber" text="search By Number" />
+      <Button layoutX="663.0" layoutY="110.0" mnemonicParsing="false" onAction="#searchByAge" text="search By Age" />
+      <Button layoutX="662.0" layoutY="140.0" mnemonicParsing="false" onAction="#canselFilters" text="Cancel Filters" />
+      <Button layoutX="586.0" layoutY="140.0" mnemonicParsing="false" onAction="#clineFild" text="Clean Field" />
+      <DatePicker fx:id="birthday" layoutX="148.0" layoutY="63.0" prefHeight="25.0" prefWidth="146.0" />
+      <TextField fx:id="number" layoutX="89.0" layoutY="169.0" prefHeight="25.0" prefWidth="274.0" />
+      <Label layoutX="9.0" layoutY="173.0" text="Number/Type" />
+      <ComboBox fx:id="type" layoutX="384.0" layoutY="169.0" prefHeight="25.0" prefWidth="101.0" />
+      <DatePicker fx:id="dateTo" layoutX="347.0" layoutY="63.0" prefHeight="25.0" prefWidth="138.0" />
+      <Label layoutX="301.0" layoutY="67.0" text="dateTo" />
+      <Label layoutX="91.0" layoutY="70.0" prefHeight="17.0" prefWidth="52.0" text="dateFrom" />
+   </children>
+</AnchorPane>
